@@ -1,0 +1,21 @@
+{
+  "name": "semih-sengul-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio of Semih Şengül - Bilkent CTIS & AI Engineer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "start": "npx -y serve . -l 3000",
+    "deploy": "npx -y vercel --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "ai-engineer",
+    "bilkent",
+    "rag",
+    "semih-sengul",
+    "vercel"
+  ],
+  "author": "Semih Şengül <semihyahama@gmail.com>",
+  "license": "MIT"
+}
