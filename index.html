@@ -16,10 +16,10 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <!-- Google Fonts: Minecraft Pixel Fonts (Press Start 2P & Silkscreen) + Modern Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
 </head>
@@ -48,7 +48,11 @@
       <div class="nav-actions">
         <!-- Language Switcher Button -->
         <button id="lang-toggle-btn" class="lang-btn" aria-label="Toggle Language" title="Türkçe / English">
-          <span class="lang-icon">🌐</span>
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
           <span id="lang-label" class="lang-text">TR</span>
         </button>
 
@@ -92,7 +96,7 @@
           </p>
 
           <p class="hero-bio" data-i18n="heroBio">
-            Passionate about building intelligent AI systems, state-of-the-art RAG pipelines, high-performance systems, and interactive digital experiences. Currently working as an AI Intern at Mobiliz and finishing my senior year at Bilkent University.
+            Passionate about building intelligent AI systems, computer vision analytics, and interactive digital game mechanics. Senior CTIS student at Bilkent University with AI internship experience at Mobiliz.
           </p>
 
           <div class="hero-stats">
@@ -234,7 +238,20 @@
 
           <div class="about-highlights-card">
             <div class="highlight-item">
-              <div class="hl-icon">🤖</div>
+              <div class="hl-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
               <div class="hl-content">
                 <h4 data-i18n="hlAiTitle">AI & RAG Specialization</h4>
                 <p data-i18n="hlAiDesc">Hands-on experience developing enterprise RAG engines, cross-encoder rerankers, OCR pipelines, and live benchmarking tools.</p>
@@ -242,7 +259,11 @@
             </div>
 
             <div class="highlight-item">
-              <div class="hl-icon">🎮</div>
+              <div class="hl-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                </svg>
+              </div>
               <div class="hl-content">
                 <h4 data-i18n="hlGameTitle">Game Development & Graphics</h4>
                 <p data-i18n="hlGameDesc">Professional Unity 2D/3D development experience at Creasaur, game physics, rapid GameJam sprints, and OpenGL coursework.</p>
@@ -250,7 +271,12 @@
             </div>
 
             <div class="highlight-item">
-              <div class="hl-icon">📐</div>
+              <div class="hl-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
               <div class="hl-content">
                 <h4 data-i18n="hlMathTitle">Mathematical Rigor</h4>
                 <p data-i18n="hlMathDesc">Taking extra higher-level university mathematics courses to ground machine learning concepts in deep analytical understanding.</p>
@@ -258,7 +284,13 @@
             </div>
 
             <div class="highlight-item">
-              <div class="hl-icon">🎸</div>
+              <div class="hl-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+              </div>
               <div class="hl-content">
                 <h4 data-i18n="hlLifeTitle">Music, Sports & Languages</h4>
                 <p data-i18n="hlLifeDesc">Avid guitar player, beat producer, Bilkent Swimming Club swimmer, and currently studying German (German master's track).</p>
@@ -281,9 +313,7 @@
         <div class="timeline">
           <!-- Mobiliz -->
           <div class="timeline-card">
-            <div class="timeline-badge current">
-              <span class="badge-dot"></span>
-            </div>
+            <div class="timeline-badge"></div>
             <div class="timeline-content">
               <div class="timeline-header">
                 <div>
@@ -291,11 +321,11 @@
                   <div class="company-name">Mobiliz</div>
                 </div>
                 <div class="timeline-date">
-                  <span class="pill pill-active" data-i18n="mobDate">August 2026 – Ongoing</span>
+                  <span class="pill" data-i18n="mobDate">August 2026 – September 2026</span>
                 </div>
               </div>
               <p class="timeline-desc" data-i18n="mobDesc">
-                Conducting cutting-edge AI engineering and RAG (Retrieval-Augmented Generation) evaluations. Architecting platforms like <strong>EVA</strong> to benchmark live deployment quality, answer accuracy, and concurrent stress loads for enterprise AI systems.
+                Conducted cutting-edge AI engineering and RAG (Retrieval-Augmented Generation) evaluations. Architected platforms like <strong>EVA</strong> to benchmark live deployment quality, answer accuracy, and concurrent stress loads for AI systems.
               </p>
               <div class="tech-tags">
                 <span>RAG</span>
@@ -424,9 +454,8 @@
         <!-- Filter Controls -->
         <div class="project-filters">
           <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All Projects</button>
-          <button class="filter-btn" data-filter="ai" data-i18n="filterAi">AI & RAG</button>
+          <button class="filter-btn" data-filter="ai" data-i18n="filterAi">AI & Computer Vision</button>
           <button class="filter-btn" data-filter="gamedev" data-i18n="filterGame">Game Development</button>
-          <button class="filter-btn" data-filter="systems" data-i18n="filterSys">Backend & Systems</button>
         </div>
 
         <div class="projects-grid">
@@ -434,7 +463,12 @@
           <div class="project-card" data-category="ai">
             <div class="project-card-banner ai-glow">
               <span class="banner-badge" data-i18n="badgeSenior">Senior Capstone Project</span>
-              <div class="card-tech-icon">👁️</div>
+              <div class="card-tech-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
             </div>
             <div class="project-card-body">
               <div class="project-header">
@@ -462,43 +496,17 @@
             </div>
           </div>
 
-          <!-- ContextIQ -->
-          <div class="project-card" data-category="ai">
-            <div class="project-card-banner rag-glow">
-              <span class="banner-badge">Production Architecture</span>
-              <div class="card-tech-icon">⚡</div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-header">
-                <h3 class="project-name">ContextIQ</h3>
-                <span class="project-period">2026</span>
-              </div>
-              <p class="project-summary" data-i18n="contextiqDesc">
-                Enterprise document Q&A platform powered by advanced RAG. Features semantic chunking, cross-encoder reranking, OCR & table parsing for PDF documents, WebSocket streaming, and speech-to-text.
-              </p>
-              <div class="project-features">
-                <span class="feat-badge">Advanced RAG</span>
-                <span class="feat-badge">Cross-Encoder</span>
-                <span class="feat-badge">WebSockets</span>
-                <span class="feat-badge">OCR Extraction</span>
-              </div>
-              <div class="project-footer">
-                <button class="btn btn-sm btn-outline open-modal-btn" data-modal="contextiq" data-i18n="learnMore">
-                  <span>Details & Architecture</span>
-                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-
           <!-- EVA -->
-          <div class="project-card" data-category="ai systems">
+          <div class="project-card" data-category="ai">
             <div class="project-card-banner eval-glow">
-              <span class="banner-badge">Mobiliz Platform</span>
-              <div class="card-tech-icon">📊</div>
+              <span class="banner-badge" data-i18n="badgeAiProject">AI Project</span>
+              <div class="card-tech-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
             </div>
             <div class="project-card-body">
               <div class="project-header">
@@ -506,7 +514,7 @@
                 <span class="project-period">2026</span>
               </div>
               <p class="project-summary" data-i18n="evaDesc">
-                Automated evaluation and stress platform for Mobiliz RAG deployments. Evaluates live answer accuracy while simultaneously driving concurrent load to inspect server behavior under pressure.
+                Automated evaluation and stress platform for live RAG deployments. Evaluates real answer accuracy while simultaneously driving concurrent load to inspect server behavior under pressure.
               </p>
               <div class="project-features">
                 <span class="feat-badge">Quality Scoring</span>
@@ -530,7 +538,15 @@
           <div class="project-card" data-category="gamedev">
             <div class="project-card-banner unity-glow">
               <span class="banner-badge">Unity & C#</span>
-              <div class="card-tech-icon">🕹️</div>
+              <div class="card-tech-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                  <line x1="6" y1="12" x2="10" y2="12"></line>
+                  <line x1="8" y1="10" x2="8" y2="14"></line>
+                  <circle cx="15" cy="11" r="1"></circle>
+                  <circle cx="18" cy="13" r="1"></circle>
+                </svg>
+              </div>
             </div>
             <div class="project-card-body">
               <div class="project-header">
@@ -557,38 +573,6 @@
               </div>
             </div>
           </div>
-
-          <!-- UsersMicroservices & MVC -->
-          <div class="project-card" data-category="systems">
-            <div class="project-card-banner backend-glow">
-              <span class="banner-badge">Distributed Backend</span>
-              <div class="card-tech-icon">🛡️</div>
-            </div>
-            <div class="project-card-body">
-              <div class="project-header">
-                <h3 class="project-name">UsersMicroservices & UsersMVC</h3>
-                <span class="project-period">2026</span>
-              </div>
-              <p class="project-summary" data-i18n="backendDesc">
-                Robust user authentication and management architecture using modern microservices, decoupled service endpoints, relational database persistence, and clean MVC paradigms.
-              </p>
-              <div class="tech-tags">
-                <span class="feat-badge">Java</span>
-                <span class="feat-badge">Microservices</span>
-                <span class="feat-badge">MVC Architecture</span>
-                <span class="feat-badge">SQL Databases</span>
-              </div>
-              <div class="project-footer">
-                <button class="btn btn-sm btn-outline open-modal-btn" data-modal="microservices" data-i18n="learnMore">
-                  <span>Details & Architecture</span>
-                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -606,7 +590,12 @@
           <!-- Programming Languages -->
           <div class="skill-group-card">
             <div class="skill-group-header">
-              <span class="skill-icon">💻</span>
+              <span class="skill-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </span>
               <h3 data-i18n="skillLangTitle">Programming Languages</h3>
             </div>
             <div class="skill-items-list">
@@ -623,7 +612,20 @@
           <!-- AI & Data Science -->
           <div class="skill-group-card">
             <div class="skill-group-header">
-              <span class="skill-icon">🧠</span>
+              <span class="skill-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </span>
               <h3 data-i18n="skillAiTitle">AI & Machine Learning</h3>
             </div>
             <div class="skill-items-list">
@@ -639,7 +641,12 @@
           <!-- Coursework & Certified Skills -->
           <div class="skill-group-card">
             <div class="skill-group-header">
-              <span class="skill-icon">📜</span>
+              <span class="skill-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </span>
               <h3 data-i18n="skillCourseTitle">Coursework & Certifications</h3>
             </div>
             <div class="skill-items-list">
@@ -655,7 +662,19 @@
           <!-- Personal Passions & Languages -->
           <div class="skill-group-card">
             <div class="skill-group-header">
-              <span class="skill-icon">🎸</span>
+              <span class="skill-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="4" y1="21" x2="4" y2="14"></line>
+                  <line x1="4" y1="10" x2="4" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12" y2="3"></line>
+                  <line x1="20" y1="21" x2="20" y2="16"></line>
+                  <line x1="20" y1="12" x2="20" y2="3"></line>
+                  <line x1="1" y1="14" x2="7" y2="14"></line>
+                  <line x1="9" y1="8" x2="15" y2="8"></line>
+                  <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+              </span>
               <h3 data-i18n="skillPassionsTitle">Interests & Languages</h3>
             </div>
             <div class="skill-items-list">
@@ -683,7 +702,12 @@
         <div class="edu-card">
           <div class="edu-main">
             <div class="edu-badge">
-              <span class="edu-icon">🎓</span>
+              <span class="edu-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </span>
             </div>
             <div class="edu-info">
               <div class="edu-degree">
@@ -703,15 +727,15 @@
 
           <div class="edu-highlights">
             <div class="edu-point">
-              <strong>🔬 Senior Capstone (ObservAI):</strong>
+              <strong>Senior Capstone (ObservAI):</strong>
               <span data-i18n="eduObsText">Developing an AI-powered human analytics system tracking customer dwell time and space utilization through live video heatmaps.</span>
             </div>
             <div class="edu-point">
-              <strong>📐 Mathematical Foundation:</strong>
+              <strong>Mathematical Foundation:</strong>
               <span data-i18n="eduMathText">Completing additional university mathematics lectures beyond curriculum requirements to fortify foundational theory for deep learning.</span>
             </div>
             <div class="edu-point">
-              <strong>💻 Complete Term Projects:</strong>
+              <strong>Core Term Projects:</strong>
               <span data-i18n="eduProjText">Built comprehensive, tested term projects for every core language (C/C++, Java, Python, JavaScript, R, Unity C#).</span>
             </div>
           </div>
@@ -732,7 +756,12 @@
           <div class="contact-info-cards">
             <!-- Email 1 -->
             <div class="contact-card">
-              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
               <div class="contact-card-body">
                 <div class="contact-label" data-i18n="contactPrimary">Primary Email</div>
                 <div class="contact-value">semihyahama@gmail.com</div>
@@ -747,7 +776,11 @@
 
             <!-- Email 2 -->
             <div class="contact-card">
-              <div class="contact-card-icon">🏛️</div>
+              <div class="contact-card-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 3l9 7H3l9-7z"></path>
+                </svg>
+              </div>
               <div class="contact-card-body">
                 <div class="contact-label" data-i18n="contactUni">University Email</div>
                 <div class="contact-value">semih.sengul@ug.bilkent.edu.tr</div>
@@ -762,7 +795,12 @@
 
             <!-- Phone -->
             <div class="contact-card">
-              <div class="contact-card-icon">📱</div>
+              <div class="contact-card-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
               <div class="contact-card-body">
                 <div class="contact-label" data-i18n="contactPhone">Phone / WhatsApp</div>
                 <div class="contact-value">+90-5359771414</div>

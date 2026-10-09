@@ -1,10 +1,10 @@
 /**
  * SEMIH ŞENGÜL - PORTFOLIO INTERACTION LOGIC
  * Features:
- * - Dynamic Ambient Canvas (Starfield / Neural Network Constellation)
+ * - Minecraft Pixel Dust Ambient Canvas (Floating Pastel Pixel Spores)
  * - Complete Bilingual Translation Engine (English & Turkish)
  * - Interactive Project Filter System
- * - Architecture Deep-Dive Modal
+ * - Architecture Deep-Dive Modal (ObservAI, EVA, Unity Games)
  * - Copy to Clipboard & Toast System
  * - Contact Form Handler
  * - Active Scroll Spy Navigation
@@ -25,21 +25,21 @@ const translations = {
     heroBadge: "Bilkent CTIS Senior • AI & Systems Developer",
     heroGreeting: "Hi, I'm",
     heroRole: "AI Engineer & Software Developer",
-    heroBio: "Passionate about building intelligent AI systems, state-of-the-art RAG pipelines, high-performance systems, and interactive digital experiences. Currently working as an AI Intern at Mobiliz and finishing my senior year at Bilkent University.",
+    heroBio: "Passionate about building intelligent AI systems, computer vision analytics, and interactive digital game mechanics. Senior CTIS student at Bilkent University with AI internship experience at Mobiliz.",
     statGpa: "Bilkent CTIS CGPA",
     statInternships: "Internships & Roles",
     statLanguages: "Languages & Frameworks",
     viewWork: "Explore Projects",
     getInTouch: "Get in Touch",
     previewCv: "View CV",
-    profileBadge: "Bilkent CTIS • Mobiliz AI Intern",
+    profileBadge: "Bilkent CTIS • AI Developer",
     availability: "Open to full-time & master's opportunities",
     aboutTag: "BIOGRAPHY",
     aboutTitle: "About Me",
     aboutSubtitle: "Blending AI research, game physics, and modern software architectures.",
     aboutStoryTitle: "Passionate Technologist & Lifelong Learner",
     aboutStoryP1: "I am a 4th-year Computer Technology and Information Systems (CTIS) student at Bilkent University. My engineering journey spans Artificial Intelligence, Retrieval-Augmented Generation (RAG) systems, Unity Game Development, and scalable software backends.",
-    aboutStoryP2: "At Mobiliz, I work as an AI Intern focusing on production-grade RAG evaluation, semantic chunking, and intelligent Q&A platforms. Alongside my academic degree, I take additional university courses in advanced mathematics to strengthen the rigorous theoretical foundation behind modern deep learning.",
+    aboutStoryP2: "At Mobiliz, I completed an AI Internship focusing on production-grade RAG evaluation, semantic chunking, and intelligent evaluation platforms. Alongside my academic degree, I take additional university courses in advanced mathematics to strengthen the rigorous theoretical foundation behind modern deep learning.",
     aboutStoryP3: "Outside the terminal, I produce music and play guitar, swim actively as a member of the Bilkent Swimming Club, and study German to prepare for future international research and master's studies in computer science.",
     labelPhone: "Phone:",
     labelEmail: "Primary Email:",
@@ -56,8 +56,8 @@ const translations = {
     expTitle: "Work Experience",
     expSubtitle: "From corporate AI research to indie game development and frontend engineering.",
     mobRole: "Artificial Intelligence Intern",
-    mobDate: "August 2026 – Ongoing",
-    mobDesc: "Conducting cutting-edge AI engineering and RAG (Retrieval-Augmented Generation) evaluations. Architecting platforms like EVA to benchmark live deployment quality, answer accuracy, and concurrent stress loads for enterprise AI systems.",
+    mobDate: "August 2026 – September 2026",
+    mobDesc: "Conducted cutting-edge AI engineering and RAG (Retrieval-Augmented Generation) evaluations. Architected platforms like EVA to benchmark live deployment quality, answer accuracy, and concurrent stress loads for AI systems.",
     creaRole: "Unity 2D and 3D Game Development Intern",
     creaDate: "June 2025 – January 2026",
     creaDesc: "Engineered core gameplay loops, character controllers, physics-based mechanics, and UI systems in Unity C#. Collaborated closely with game designers and 3D artists, profiling mobile device performance and refining user interaction flows.",
@@ -74,15 +74,13 @@ const translations = {
     projTitle: "Featured Projects",
     projSubtitle: "High-impact engineering works spanning Artificial Intelligence, Computer Vision, and Systems.",
     filterAll: "All Projects",
-    filterAi: "AI & RAG",
+    filterAi: "AI & Computer Vision",
     filterGame: "Game Development",
-    filterSys: "Backend & Systems",
     badgeSenior: "Senior Capstone Project",
+    badgeAiProject: "AI Project",
     observaiDesc: "AI-powered, real-time human analytics system that analyzes CCTV camera feeds to generate live density heatmaps, occupancy tracking, and dwell-time metrics for café and restaurant managers.",
-    contextiqDesc: "Enterprise document Q&A platform powered by advanced RAG. Features semantic chunking, cross-encoder reranking, OCR & table parsing for PDF documents, WebSocket streaming, and speech-to-text.",
-    evaDesc: "Automated evaluation and stress platform for Mobiliz RAG deployments. Evaluates live answer accuracy while simultaneously driving concurrent load to inspect server behavior under pressure.",
+    evaDesc: "Automated evaluation and stress platform for live RAG deployments. Evaluates real answer accuracy while simultaneously driving concurrent load to inspect server behavior under pressure.",
     gameDesc: "Engineered interactive mobile mechanics, ragdoll/rigid-body physics, procedural obstacles, and player feedback loops at Creasaur Entertainment and Bilkent GameJam events.",
-    backendDesc: "Robust user authentication and management architecture using modern microservices, decoupled service endpoints, relational database persistence, and clean MVC paradigms.",
     learnMore: "Details & Architecture",
     skillsTag: "EXPERTISE",
     skillsTitle: "Technical Arsenal",
@@ -122,21 +120,21 @@ const translations = {
     heroBadge: "Bilkent CTIS Son Sınıf • Yapay Zeka & Sistem Geliştirici",
     heroGreeting: "Merhaba, ben",
     heroRole: "Yapay Zeka Mühendisi & Yazılım Geliştirici",
-    heroBio: "Yapay zeka sistemleri, son teknoloji RAG mimarileri, yüksek performanslı yazılımlar ve etkileşimli dijital deneyimler geliştiriyorum. Şu anda Mobiliz'de Yapay Zeka Stajyeri olarak çalışıyor ve Bilkent Üniversitesi'ndeki son yılımı tamamlıyorum.",
+    heroBio: "Yapay zeka sistemleri, bilgisayarlı görü analitikleri ve etkileşimli dijital oyun mekanikleri geliştiriyorum. Mobiliz'deki yapay zeka stajını tamamlamış Bilkent Üniversitesi CTIS son sınıf öğrencisiyim.",
     statGpa: "Bilkent CTIS Not Ortalaması",
     statInternships: "Staj & Görev",
     statLanguages: "Programlama Dili & Teknoloji",
     viewWork: "Projeleri İncele",
     getInTouch: "İletişime Geç",
     previewCv: "CV'yi Görüntüle",
-    profileBadge: "Bilkent CTIS • Mobiliz AI Stajyeri",
+    profileBadge: "Bilkent CTIS • Yapay Zeka Geliştirici",
     availability: "Tam zamanlı & yüksek lisans fırsatlarına açık",
     aboutTag: "BİYOGRAFİ",
     aboutTitle: "Hakkımda",
     aboutSubtitle: "Yapay zeka araştırmaları, oyun fizikleri ve modern yazılım mimarilerinin kesişimi.",
     aboutStoryTitle: "Teknoloji Tutkunu & Sürekli Öğrenen Mühendis",
-    aboutStoryP1: "Bilkent Üniversitesi Bilgisayar Teknolojileri ve Bilişim Sistemleri (CTIS) 4. sınıf öğrencisiyim. Mühendislik serüvenim Yapay Zeka, RAG (Retrieval-Augmented Generation) sistemleri, Unity Oyun Geliştirme ve ölçeklenebilir backend sistemlerini kapsıyor.",
-    aboutStoryP2: "Mobiliz şirketinde yapay zeka stajyeri olarak üretim seviyesinde RAG değerlendirme platformları, semantik parçalama ve akıllı soru-cevap sistemleri üzerinde çalışıyorum. Derin öğrenmenin arkasındaki sağlam teorik temeli güçlendirmek adına üniversitede ileri düzey ek matematik dersleri alıyorum.",
+    aboutStoryP1: "Bilkent Üniversitesi Bilgisayar Teknolojileri ve Bilişim Sistemleri (CTIS) 4. sınıf öğrencisiyim. Mühendislik serüvenim Yapay Zeka, RAG sistemleri, Unity Oyun Geliştirme ve ölçeklenebilir backend sistemlerini kapsıyor.",
+    aboutStoryP2: "Mobiliz şirketinde yapay zeka stajımı Eylül 2026 itibariyle tamamladım; kurumsal RAG sistemleri, kalite değerlendirme platformları ve semantik arama üzerine çalıştım. Derin öğrenmenin arkasındaki sağlam teorik temeli güçlendirmek adına üniversitede ileri düzey ek matematik dersleri alıyorum.",
     aboutStoryP3: "Kod yazmanın dışında müzik prodüksiyonu yapıyor ve gitar çalıyorum. Bilkent Yüzme Kulübü üyesi olarak aktif yüzüyor ve Almanya'da master hedeflerim doğrultusunda Almanca çalışıyorum.",
     labelPhone: "Telefon:",
     labelEmail: "Kişisel E-posta:",
@@ -153,8 +151,8 @@ const translations = {
     expTitle: "İş Deneyimi",
     expSubtitle: "Kurumsal yapay zeka araştırmalarından bağımsız oyun geliştirmeye ve frontend mühendisliğine.",
     mobRole: "Yapay Zeka (AI) Stajyeri",
-    mobDate: "Ağustos 2026 – Devam Ediyor",
-    mobDesc: "İleri düzey yapay zeka mühendisliği ve RAG (Retrieval-Augmented Generation) değerlendirmeleri yürütme. EVA platformunu tasarlayarak canlı RAG sistemlerinin yanıt kalitesini ve eşzamanlı yük altındaki sunucu metriklerini test etme.",
+    mobDate: "Ağustos 2026 – Eylül 2026",
+    mobDesc: "İleri düzey yapay zeka mühendisliği ve RAG değerlendirmeleri yürütme. EVA platformunu tasarlayarak canlı RAG sistemlerinin yanıt kalitesini ve eşzamanlı yük altındaki sunucu metriklerini test etme.",
     creaRole: "Unity 2D & 3D Oyun Geliştirme Stajyeri",
     creaDate: "Haziran 2025 – Ocak 2026",
     creaDesc: "Unity C# ile temel oyun döngüleri, karakter kontrol mekanikleri, fizik sistemleri ve UI geliştirme. Oyun tasarımcıları ve 3D artistlerle yakın iş birliği içinde mobil performans profilleme ve optimizasyon.",
@@ -171,15 +169,13 @@ const translations = {
     projTitle: "Öne Çıkan Projeler",
     projSubtitle: "Yapay Zeka, Bilgisayarlı Görü ve Sistem Mimarilerini buluşturan yüksek etkili çalışmalar.",
     filterAll: "Tüm Projeler",
-    filterAi: "Yapay Zeka & RAG",
+    filterAi: "Yapay Zeka & Görü",
     filterGame: "Oyun Geliştirme",
-    filterSys: "Backend & Sistemler",
     badgeSenior: "Bitirme Projesi (Senior Capstone)",
+    badgeAiProject: "Yapay Zeka Projesi",
     observaiDesc: "Kamera görüntülerinden canlı yoğunluk ısı haritaları, doluluk oranı ve bekleme süresi metrikleri üreterek kafe ve restoran yöneticilerine rehberlik eden yapay zeka destekli insan analitiği sistemi.",
-    contextiqDesc: "Gelişmiş RAG ile güçlendirilmiş kurumsal belge soru-cevap platformu. Semantik parçalama, cross-encoder reranker, PDF OCR & tablo analizi, WebSocket akışı ve sesten metne dönüştürme.",
-    evaDesc: "Mobiliz RAG sistemleri için otomatik kalite ve yük değerlendirme platformu. Gerçek sorularla yanıt doğruluğunu ölçerken aynı anda sunucuya eşzamanlı yük bindirerek performans analizi yapar.",
+    evaDesc: "Canlı RAG sistemleri için otomatik kalite ve yük değerlendirme platformu. Gerçek sorularla yanıt doğruluğunu ölçerken aynı anda sunucuya eşzamanlı yük bindirerek performans analizi yapar.",
     gameDesc: "Creasaur Entertainment ve Bilkent GameJam etkinliklerinde geliştirilen etkileşimli mobil mekanikler, 2D/3D fizik sistemleri, engeller ve oyuncu geri bildirim döngüleri.",
-    backendDesc: "Modern mikroservisler, ayrık servis uçları, ilişkisel veritabanı kalıcılığı ve temiz MVC paradigmaları kullanan güvenilir kullanıcı kimlik doğrulama mimarisi.",
     learnMore: "Detaylar & Mimari",
     skillsTag: "UZMANLIK",
     skillsTitle: "Teknoloji Cephaneliği",
@@ -237,7 +233,7 @@ function applyLanguage(lang) {
   try {
     localStorage.setItem('portfolio_lang', lang);
   } catch (e) {
-    // localStorage might fail in restricted environments
+    // localStorage fallback
   }
 }
 
@@ -283,64 +279,32 @@ const projectModals = {
       `
     }
   },
-  contextiq: {
-    title: {
-      en: "ContextIQ — Enterprise Intelligent Document Q&A (RAG)",
-      tr: "ContextIQ — Kurumsal Akıllı Doküman Soru-Cevap (RAG)"
-    },
-    content: {
-      en: `
-        <h4>Platform Vision</h4>
-        <p>ContextIQ is an enterprise-ready Retrieval-Augmented Generation (RAG) platform that empowers organizations to extract precise, context-backed answers from complex multi-page PDF documents.</p>
-
-        <h4>Core Innovations</h4>
-        <ul>
-          <li><strong>Marker-Based Extraction & OCR:</strong> Deep parsing of multi-column PDFs, embedded data tables, and scanned text.</li>
-          <li><strong>Semantic Chunking & Cross-Encoders:</strong> Chunks documents along semantic sentence boundaries and reranks retrieved passages with cross-encoder models for ultra-high retrieval precision.</li>
-          <li><strong>WebSocket Real-time Streaming:</strong> Sub-second streaming token output with live source citation highlighting.</li>
-          <li><strong>Multimodal & Voice Input:</strong> Built-in speech-to-text querying and dual-language (Turkish / English) understanding.</li>
-        </ul>
-      `,
-      tr: `
-        <h4>Platform Vizyonu</h4>
-        <p>ContextIQ, kurumların karmaşık çok sayfalı PDF dokümanlarından kaynak doğrulamalı kesin yanıtlar almasını sağlayan kurumsal seviyede RAG platformudur.</p>
-
-        <h4>Temel Yenilikler</h4>
-        <ul>
-          <li><strong>Gelişmiş Çıkarım & OCR:</strong> Çok sütunlu PDF'ler, gömülü tablolar ve taranmış belgeler üzerinde derin ayrıştırma.</li>
-          <li><strong>Semantik Parçalama & Cross-Encoder Reranker:</strong> Metinleri anlam bütünlüğüne göre bölme ve en doğru pasajları cross-encoder ile yeniden sıralama.</li>
-          <li><strong>WebSocket Canlı Akışı:</strong> Gerçek zamanlı kelime akışı ve doğrudan kaynak referanslama.</li>
-          <li><strong>Sesli Girdi & Çift Dil Desteği:</strong> Konuşmadan metne sorgulama ve Türkçe/İngilizce çift dil kabiliyeti.</li>
-        </ul>
-      `
-    }
-  },
   eva: {
     title: {
-      en: "EVA — Mobiliz RAG Quality & Load Evaluation Platform",
-      tr: "EVA — Mobiliz RAG Kalite & Yük Değerlendirme Platformu"
+      en: "EVA — Live RAG Quality & Stress Evaluation Platform",
+      tr: "EVA — Canlı RAG Kalite & Stres Değerlendirme Platformu"
     },
     content: {
       en: `
         <h4>Mission</h4>
-        <p>EVA benchmarks live production RAG deployments at Mobiliz. Unlike synthetic benchmarks, EVA queries the running product with real-world workloads while evaluating answer correctness and stressing server concurrency.</p>
+        <p>EVA benchmarks live production RAG deployments. Unlike synthetic benchmarks, EVA queries the running product with real-world workloads while evaluating answer correctness and stressing server concurrency.</p>
 
         <h4>Capabilities</h4>
         <ul>
-          <li><strong>RAGTargetProvider Interface:</strong> Pluggable provider architecture allowing any deployment (ContextIQ or external engines) to be benchmarked seamlessly.</li>
+          <li><strong>RAGTargetProvider Interface:</strong> Pluggable provider architecture allowing any deployment to be benchmarked seamlessly.</li>
           <li><strong>Dual Quality & Concurrency Engine:</strong> Correlates answer degradation against CPU, memory, and token generation latency under concurrent load spikes.</li>
           <li><strong>Scoped Historical Projects:</strong> Enables distinct engineering teams to record experiments without cross-contaminating benchmark histories.</li>
         </ul>
       `,
       tr: `
         <h4>Görev Tanımı</h4>
-        <p>EVA, Mobiliz bünyesindeki canlı RAG sistemlerini değerlendiren platformdur. Sentetik testlerin ötesine geçerek canlı sisteme gerçek sorular sorar, cevap doğruluğunu puanlar ve eşzamanlı yük altındaki sunucu davranışını ölçer.</p>
+        <p>EVA, canlı RAG sistemlerini değerlendiren bir test platformudur. Sentetik testlerin ötesine geçerek canlı sisteme gerçek sorular sorar, cevap doğruluğunu puanlar ve eşzamanlı yük altındaki sunucu davranışını ölçer.</p>
 
         <h4>Öne Çıkan Özellikler</h4>
         <ul>
           <li><strong>RAGTargetProvider Mimarisi:</strong> Farklı RAG hedeflerini tek çatı altında test etmeye olanak tanıyan modüler arayüz.</li>
           <li><strong>Eşzamanlı Yük & Kalite Motoru:</strong> Yanıt doğruluğundaki düşüşü, sunucu yükü ve yanıt gecikmesi ile korele eder.</li>
-          <li><strong>İzole Proje Geçmişi:</strong> Farklı ekiplerin test sonuçlarını birbirine karıştırmadan arşivleme.</li>
+          <li><strong>İzole Proje Geçmişi:</strong> Farklı testlerin sonuçlarını birbirine karıştırmadan arşivleme.</li>
         </ul>
       `
     }
@@ -374,41 +338,11 @@ const projectModals = {
         </ul>
       `
     }
-  },
-  microservices: {
-    title: {
-      en: "UsersMicroservices & UsersMVC Distributed Backend",
-      tr: "UsersMicroservices & UsersMVC Dağıtık Backend Mimarisi"
-    },
-    content: {
-      en: `
-        <h4>Architecture Breakdown</h4>
-        <p>A distributed user management and security platform demonstrating modern enterprise design patterns in Java and Spring Boot.</p>
-
-        <h4>Architecture Components</h4>
-        <ul>
-          <li><strong>Decoupled Microservices:</strong> Independent services for authentication, profile persistence, and audit logging.</li>
-          <li><strong>Security & Tokens:</strong> Stateless JWT authentication, role-based access control (RBAC), and encrypted password storage.</li>
-          <li><strong>Database Resilience:</strong> Relational SQL schema design with optimized indexing, transaction rollbacks, and connection pooling.</li>
-        </ul>
-      `,
-      tr: `
-        <h4>Mimari İnceleme</h4>
-        <p>Java ve Spring Boot üzerinde modern kurumsal yazılım kalıplarını uygulayan dağıtık kullanıcı yönetimi ve güvenlik platformu.</p>
-
-        <h4>Mimari Bileşenleri</h4>
-        <ul>
-          <li><strong>Ayrık Mikroservisler:</strong> Kimlik doğrulama, kullanıcı profili ve loglama için bağımsız çalışan servisler.</li>
-          <li><strong>Güvenlik & Yetkilendirme:</strong> Durumsuz (stateless) JWT doğrulaması, rol tabanlı erişim kontrolü (RBAC) ve şifreli veri saklama.</li>
-          <li><strong>Veritabanı Sağlamlığı:</strong> İndeksleme, transaction yönetimi ve bağlantı havuzuyla optimize edilmiş SQL veritabanı tasarımı.</li>
-        </ul>
-      `
-    }
   }
 };
 
 // ==========================================
-// 3. BACKGROUND AMBIENT PARTICLES CANVAS
+// 3. MINECRAFT PIXEL PARTICLES CANVAS (PASTEL PIXEL DUST)
 // ==========================================
 function initCanvasBackground() {
   const canvas = document.getElementById('bg-canvas');
@@ -423,17 +357,28 @@ function initCanvasBackground() {
     height = canvas.height = window.innerHeight;
   });
 
-  const particleCount = Math.min(Math.floor((width * height) / 16000), 75);
+  // Midnight Navy & Ember Orange pixel particles
+  const particleColors = [
+    'rgba(255, 122, 24, ',  // Ember Orange
+    'rgba(255, 158, 66, ',  // Warm Light Orange
+    'rgba(96, 165, 250, ',  // Ice Night Blue
+    'rgba(147, 197, 253, ', // Soft Blue
+    'rgba(255, 255, 255, '  // Starlight White
+  ];
+
+  const pixelSizes = [4, 6, 8];
+  const particleCount = Math.min(Math.floor((width * height) / 18000), 60);
   const particles = [];
 
   for (let i = 0; i < particleCount; i++) {
     particles.push({
-      x: Math.random() * width,
-      y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 0.6,
-      vy: (Math.random() - 0.5) * 0.6,
-      radius: Math.random() * 1.8 + 0.8,
-      color: Math.random() > 0.5 ? 'rgba(0, 242, 254, ' : 'rgba(121, 40, 202, '
+      x: Math.floor(Math.random() * width),
+      y: Math.floor(Math.random() * height),
+      size: pixelSizes[Math.floor(Math.random() * pixelSizes.length)],
+      vx: (Math.random() - 0.5) * 0.4,
+      vy: - (Math.random() * 0.4 + 0.15), // Gently drift upwards like Minecraft spores
+      alpha: Math.random() * 0.4 + 0.25,
+      color: particleColors[Math.floor(Math.random() * particleColors.length)]
     });
   }
 
@@ -453,46 +398,24 @@ function initCanvasBackground() {
       p.x += p.vx;
       p.y += p.vy;
 
+      // Wrap around bounds
       if (p.x < 0) p.x = width;
       if (p.x > width) p.x = 0;
       if (p.y < 0) p.y = height;
       if (p.y > height) p.y = 0;
 
-      // Draw particle
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fillStyle = p.color + '0.7)';
-      ctx.fill();
-
-      // Connect with close particles
-      for (let j = i + 1; j < particles.length; j++) {
-        const p2 = particles[j];
-        const dx = p.x - p2.x;
-        const dy = p.y - p2.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        if (dist < 120) {
-          ctx.beginPath();
-          ctx.moveTo(p.x, p.y);
-          ctx.lineTo(p2.x, p2.y);
-          ctx.strokeStyle = `rgba(0, 242, 254, ${0.15 * (1 - dist / 120)})`;
-          ctx.lineWidth = 0.7;
-          ctx.stroke();
-        }
+      // Mouse gentle repulsion / interaction
+      const dx = p.x - mouseX;
+      const dy = p.y - mouseY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < 120 && dist > 0) {
+        p.x += (dx / dist) * 1.5;
+        p.y += (dy / dist) * 1.5;
       }
 
-      // Mouse interactive attraction/line
-      const mdx = p.x - mouseX;
-      const mdy = p.y - mouseY;
-      const mDist = Math.sqrt(mdx * mdx + mdy * mdy);
-      if (mDist < 160) {
-        ctx.beginPath();
-        ctx.moveTo(p.x, p.y);
-        ctx.lineTo(mouseX, mouseY);
-        ctx.strokeStyle = `rgba(121, 40, 202, ${0.35 * (1 - mDist / 160)})`;
-        ctx.lineWidth = 0.9;
-        ctx.stroke();
-      }
+      // Draw crisp pixel square (Minecraft style block dust)
+      ctx.fillStyle = p.color + p.alpha + ')';
+      ctx.fillRect(Math.floor(p.x), Math.floor(p.y), p.size, p.size);
     }
 
     requestAnimationFrame(animate);
@@ -530,7 +453,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (stored && (stored === 'en' || stored === 'tr')) {
       savedLang = stored;
     } else {
-      // Check browser locale
       const navLang = navigator.language || navigator.userLanguage || '';
       if (navLang.toLowerCase().startsWith('tr')) {
         savedLang = 'tr';
@@ -547,7 +469,7 @@ document.addEventListener('DOMContentLoaded', () => {
     langBtn.addEventListener('click', () => {
       const nextLang = currentLang === 'en' ? 'tr' : 'en';
       applyLanguage(nextLang);
-      showToast(nextLang === 'tr' ? 'Dil Türkçe olarak ayarlandı 🇹🇷' : 'Language switched to English 🌐');
+      showToast(nextLang === 'tr' ? 'Dil: Türkçe' : 'Language: English');
     });
   }
 
@@ -660,7 +582,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navigator.clipboard.writeText(textToCopy).then(() => {
           showToast(`Copied to clipboard: ${textToCopy}`);
         }).catch(() => {
-          // Fallback
           showToast(`Email: ${textToCopy}`);
         });
       }
@@ -681,7 +602,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Prepare mailto link as direct action
       const mailtoUrl = `mailto:semihyahama@gmail.com?subject=${encodeURIComponent('Portfolio Contact from ' + name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\nMessage:\n' + message)}`;
 
       showToast(currentLang === 'tr' ? 'Mesajınız hazırlanıyor...' : 'Preparing message in your email client...');
