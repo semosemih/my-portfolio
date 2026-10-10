@@ -353,8 +353,11 @@ function initCanvasBackground() {
   let height = (canvas.height = window.innerHeight);
 
   window.addEventListener('resize', () => {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
+    // Only resize canvas if width changes or significant height change (prevents iOS address bar scroll flicker)
+    if (window.innerWidth !== width || Math.abs(window.innerHeight - height) > 120) {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
   });
 
   // Midnight Navy & Ember Orange pixel particles
@@ -388,6 +391,18 @@ function initCanvasBackground() {
   window.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
+  });
+
+  window.addEventListener('touchmove', (e) => {
+    if (e.touches && e.touches[0]) {
+      mouseX = e.touches[0].clientX;
+      mouseY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => {
+    mouseX = -1000;
+    mouseY = -1000;
   });
 
   function animate() {
@@ -483,19 +498,42 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Mobile Toggle
+  // Mobile Toggle & Navigation Menu
   const mobileToggle = document.getElementById('mobile-toggle');
   const navMenu = document.getElementById('nav-menu');
   if (mobileToggle && navMenu) {
-    mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
+    const closeMobileMenu = () => {
+      navMenu.classList.remove('open');
+      mobileToggle.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navMenu.classList.toggle('open');
+      mobileToggle.classList.toggle('active', isOpen);
+      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
     // Close when clicking nav link
     navMenu.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
+        closeMobileMenu();
       });
+    });
+
+    // Close when clicking outside navbar
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('open') && !navbar.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMobileMenu();
+      }
     });
   }
 
